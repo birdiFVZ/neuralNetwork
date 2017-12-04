@@ -84,6 +84,24 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/birdi/CLionProjects/neuralNetwork/classes/MyBodyData.cpp">
+			<Option target="neuralNetwork"/>
+		</Unit>
+		<Unit filename="/home/birdi/CLionProjects/neuralNetwork/classes/MyBodyData.h">
+			<Option target="neuralNetwork"/>
+		</Unit>
+		<Unit filename="/home/birdi/CLionProjects/neuralNetwork/classes/MyFile.cpp">
+			<Option target="neuralNetwork"/>
+		</Unit>
+		<Unit filename="/home/birdi/CLionProjects/neuralNetwork/classes/MyFile.h">
+			<Option target="neuralNetwork"/>
+		</Unit>
+		<Unit filename="/home/birdi/CLionProjects/neuralNetwork/classes/MyMatrix.cpp">
+			<Option target="neuralNetwork"/>
+		</Unit>
+		<Unit filename="/home/birdi/CLionProjects/neuralNetwork/classes/MyMatrix.h">
+			<Option target="neuralNetwork"/>
+		</Unit>
 		<Unit filename="/home/birdi/CLionProjects/neuralNetwork/main.cpp">
 			<Option target="neuralNetwork"/>
 		</Unit>

@@ -6,7 +6,45 @@
 
 #IncludeRegexTransform: 
 
+/home/birdi/CLionProjects/neuralNetwork/classes/MyBodyData.cpp
+MyBodyData.h
+/home/birdi/CLionProjects/neuralNetwork/classes/MyBodyData.h
+
+/home/birdi/CLionProjects/neuralNetwork/classes/MyBodyData.h
+iostream
+-
+vector
+-
+
+/home/birdi/CLionProjects/neuralNetwork/classes/MyFile.cpp
+MyFile.h
+/home/birdi/CLionProjects/neuralNetwork/classes/MyFile.h
+
+/home/birdi/CLionProjects/neuralNetwork/classes/MyFile.h
+iostream
+-
+fstream
+-
+vector
+-
+MyBodyData.h
+/home/birdi/CLionProjects/neuralNetwork/classes/MyBodyData.h
+
+/home/birdi/CLionProjects/neuralNetwork/classes/MyMatrix.cpp
+MyMatrix.h
+/home/birdi/CLionProjects/neuralNetwork/classes/MyMatrix.h
+
+/home/birdi/CLionProjects/neuralNetwork/classes/MyMatrix.h
+vector
+-
+iostream
+-
+
 /home/birdi/CLionProjects/neuralNetwork/main.cpp
 iostream
 -
+classes/MyFile.h
+/home/birdi/CLionProjects/neuralNetwork/classes/MyFile.h
+classes/MyMatrix.h
+/home/birdi/CLionProjects/neuralNetwork/classes/MyMatrix.h
 

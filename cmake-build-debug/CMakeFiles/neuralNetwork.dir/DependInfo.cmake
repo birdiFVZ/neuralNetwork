@@ -4,6 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/birdi/CLionProjects/neuralNetwork/classes/MyBodyData.cpp" "/home/birdi/CLionProjects/neuralNetwork/cmake-build-debug/CMakeFiles/neuralNetwork.dir/classes/MyBodyData.cpp.o"
+  "/home/birdi/CLionProjects/neuralNetwork/classes/MyFile.cpp" "/home/birdi/CLionProjects/neuralNetwork/cmake-build-debug/CMakeFiles/neuralNetwork.dir/classes/MyFile.cpp.o"
+  "/home/birdi/CLionProjects/neuralNetwork/classes/MyMatrix.cpp" "/home/birdi/CLionProjects/neuralNetwork/cmake-build-debug/CMakeFiles/neuralNetwork.dir/classes/MyMatrix.cpp.o"
   "/home/birdi/CLionProjects/neuralNetwork/main.cpp" "/home/birdi/CLionProjects/neuralNetwork/cmake-build-debug/CMakeFiles/neuralNetwork.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
