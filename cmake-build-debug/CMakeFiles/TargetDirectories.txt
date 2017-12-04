@@ -1,0 +1,3 @@
+/home/birdi/CLionProjects/neuralNetwork/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/birdi/CLionProjects/neuralNetwork/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/birdi/CLionProjects/neuralNetwork/cmake-build-debug/CMakeFiles/neuralNetwork.dir
