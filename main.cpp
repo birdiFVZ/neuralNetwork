@@ -8,12 +8,18 @@ int main() {
     MyFile file(fileName);
 
 
-    MyMatrix matrix({
-        {1,2,3,4},
-        {4,5,6,7}
+    MyMatrix matrixA({
+        {1,2},
+        {3,4},
+        {5,6}
     });
-    matrix.print();
+    MyMatrix matrixB({
+        {7,8},
+        {9,10}
+    });
 
+    MyMatrix matrixC = matrixA.kroneckerMulti(matrixB);
 
+    matrixC.print("matrixC");
     return 0;
 }

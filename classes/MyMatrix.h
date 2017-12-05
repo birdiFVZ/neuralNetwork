@@ -14,12 +14,24 @@ using namespace std;
 
 class MyMatrix {
 public:
+    MyMatrix();
     MyMatrix(vector<vector<float>>);
+    ~MyMatrix();
     vector<vector<float>> matrix;
-    void print();
+    void print(string = "inputMatrix");
     vector<vector<float>> transpose();
-
+    vector<vector<float>> add(MyMatrix);
+    vector<vector<float>> skalarMulti(float);
+    vector<vector<float>> elementMulit(MyMatrix);
+    vector<vector<float>> kroneckerMulti(MyMatrix);
+    vector<vector<float>> multi(MyMatrix);
+    int xSize, ySize;
 private:
+    bool init();
+    bool valid;
+    bool verify(vector<vector<float>>);
+    int xAxisTag, yAxisTag;
+
 
 };
 
