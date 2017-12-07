@@ -172,37 +172,50 @@ vector<vector<float>> MyMatrix::kroneckerMulti(MyMatrix input) {
         int yTempSize = ySize * input.ySize;
         vector<vector<float>> tempMatrix
                 (yTempSize, vector<float>(xTempSize));
-        int matrixAElements = xSize * ySize;
-        int matrixBElements = input.xSize * input.ySize;
         int xTempTag = 0, yTempTag = 0;
+        int addTag = 0, yAddTag = 0;
         for(yAxisTag = 0; yAxisTag < ySize; yAxisTag++) {
             for(xAxisTag = 0; xAxisTag < xSize; xAxisTag++) {
-                int count = 0;
-                for(xTempTag = 0; xTempTag < input.xSize; xTempTag++) {
-                    for(yTempTag = 0; yTempTag < input.ySize; yTempTag++) {
-                        int y = count;
-                        int x = xAxisTag;
-                        int matrixValue = matrix[xAxisTag][yAxisTag];
-                        int inputValue = input.matrix[xTempTag][yTempTag];
-                        int resultValue = matrixValue*inputValue;
+                for(yTempTag = 0; yTempTag < input.ySize; yTempTag++) {
+                    for(xTempTag = 0; xTempTag < input.xSize; xTempTag++) {
 
-                        tempMatrix [xAxisTag][count] =
-                            matrix[xAxisTag][yAxisTag] *
-                            input.matrix[xTempTag][yTempTag];
-                        count++;
+                        int tempY = yTempTag + 2 * yAxisTag;
+                        int tempX = xTempTag + 2 * xAxisTag;
 
+                        int Y = yAxisTag;
+                        int X = xAxisTag;
+                        int inputY = yTempTag;
+                        int inputX = xTempTag;
 
-
-                        /*tempMatrix
-                            [xAxisTag + xTempTag]
-                            [yAxisTag + yTempTag] =
-                                matrix[xAxisTag][yAxisTag] *
-                                input.matrix[xTempTag][yTempTag];*/
+                        tempMatrix[tempY][tempX] =
+                           matrix[yAxisTag][xAxisTag] *
+                           input.matrix[yTempTag][xTempTag];
                     }
                 }
             }
         }
+        return tempMatrix;
+    } else {
+        return {{0}};
+    }
+}
 
+vector<vector<float>> MyMatrix::horizontalMatrixConcatenation(MyMatrix input) {
+    if(valid && ySize == input.ySize) {
+        int xTempSize = xSize + input.xSize;
+        vector<vector<float>> tempMatrix
+                (ySize, vector<float>(xTempSize));
+        for (yAxisTag = 0; yAxisTag < ySize; yAxisTag++) {
+            for(xAxisTag = 0; xAxisTag < xTempSize; xAxisTag++) {
+                if (xAxisTag < xSize) {
+                    tempMatrix[yAxisTag][xAxisTag] =
+                        matrix[yAxisTag][xAxisTag];
+                } else {
+                    tempMatrix[yAxisTag][xAxisTag] =
+                        input.matrix[yAxisTag][xAxisTag - xSize];
+                }
+            }
+        }
         return tempMatrix;
     } else {
         return {{0}};

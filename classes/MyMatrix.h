@@ -24,6 +24,7 @@ public:
     vector<vector<float>> skalarMulti(float);
     vector<vector<float>> elementMulit(MyMatrix);
     vector<vector<float>> kroneckerMulti(MyMatrix);
+    vector<vector<float>> horizontalMatrixConcatenation(MyMatrix);
     vector<vector<float>> multi(MyMatrix);
     int xSize, ySize;
 private:
