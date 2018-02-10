@@ -43,10 +43,10 @@ RM = /home/birdi/Programme/clion-2017.2.3/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/birdi/CLionProjects/neuralNetwork
+CMAKE_SOURCE_DIR = /home/birdi/Schreibtisch/neuralNetwork07022018
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/birdi/CLionProjects/neuralNetwork/cmake-build-debug
+CMAKE_BINARY_DIR = /home/birdi/Schreibtisch/neuralNetwork07022018/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/neuralNetwork.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/neuralNetwork.dir/flags.make
 
 CMakeFiles/neuralNetwork.dir/main.cpp.o: CMakeFiles/neuralNetwork.dir/flags.make
 CMakeFiles/neuralNetwork.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/birdi/CLionProjects/neuralNetwork/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/neuralNetwork.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/neuralNetwork.dir/main.cpp.o -c /home/birdi/CLionProjects/neuralNetwork/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/birdi/Schreibtisch/neuralNetwork07022018/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/neuralNetwork.dir/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/neuralNetwork.dir/main.cpp.o -c /home/birdi/Schreibtisch/neuralNetwork07022018/main.cpp
 
 CMakeFiles/neuralNetwork.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/neuralNetwork.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/birdi/CLionProjects/neuralNetwork/main.cpp > CMakeFiles/neuralNetwork.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/birdi/Schreibtisch/neuralNetwork07022018/main.cpp > CMakeFiles/neuralNetwork.dir/main.cpp.i
 
 CMakeFiles/neuralNetwork.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/neuralNetwork.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/birdi/CLionProjects/neuralNetwork/main.cpp -o CMakeFiles/neuralNetwork.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/birdi/Schreibtisch/neuralNetwork07022018/main.cpp -o CMakeFiles/neuralNetwork.dir/main.cpp.s
 
 CMakeFiles/neuralNetwork.dir/main.cpp.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/neuralNetwork.dir/main.cpp.o.provides.build: CMakeFiles/neuralNetwork
 
 CMakeFiles/neuralNetwork.dir/classes/MyFile.cpp.o: CMakeFiles/neuralNetwork.dir/flags.make
 CMakeFiles/neuralNetwork.dir/classes/MyFile.cpp.o: ../classes/MyFile.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/birdi/CLionProjects/neuralNetwork/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/neuralNetwork.dir/classes/MyFile.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/neuralNetwork.dir/classes/MyFile.cpp.o -c /home/birdi/CLionProjects/neuralNetwork/classes/MyFile.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/birdi/Schreibtisch/neuralNetwork07022018/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/neuralNetwork.dir/classes/MyFile.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/neuralNetwork.dir/classes/MyFile.cpp.o -c /home/birdi/Schreibtisch/neuralNetwork07022018/classes/MyFile.cpp
 
 CMakeFiles/neuralNetwork.dir/classes/MyFile.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/neuralNetwork.dir/classes/MyFile.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/birdi/CLionProjects/neuralNetwork/classes/MyFile.cpp > CMakeFiles/neuralNetwork.dir/classes/MyFile.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/birdi/Schreibtisch/neuralNetwork07022018/classes/MyFile.cpp > CMakeFiles/neuralNetwork.dir/classes/MyFile.cpp.i
 
 CMakeFiles/neuralNetwork.dir/classes/MyFile.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/neuralNetwork.dir/classes/MyFile.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/birdi/CLionProjects/neuralNetwork/classes/MyFile.cpp -o CMakeFiles/neuralNetwork.dir/classes/MyFile.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/birdi/Schreibtisch/neuralNetwork07022018/classes/MyFile.cpp -o CMakeFiles/neuralNetwork.dir/classes/MyFile.cpp.s
 
 CMakeFiles/neuralNetwork.dir/classes/MyFile.cpp.o.requires:
 
@@ -107,16 +107,16 @@ CMakeFiles/neuralNetwork.dir/classes/MyFile.cpp.o.provides.build: CMakeFiles/neu
 
 CMakeFiles/neuralNetwork.dir/classes/MyBodyData.cpp.o: CMakeFiles/neuralNetwork.dir/flags.make
 CMakeFiles/neuralNetwork.dir/classes/MyBodyData.cpp.o: ../classes/MyBodyData.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/birdi/CLionProjects/neuralNetwork/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/neuralNetwork.dir/classes/MyBodyData.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/neuralNetwork.dir/classes/MyBodyData.cpp.o -c /home/birdi/CLionProjects/neuralNetwork/classes/MyBodyData.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/birdi/Schreibtisch/neuralNetwork07022018/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/neuralNetwork.dir/classes/MyBodyData.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/neuralNetwork.dir/classes/MyBodyData.cpp.o -c /home/birdi/Schreibtisch/neuralNetwork07022018/classes/MyBodyData.cpp
 
 CMakeFiles/neuralNetwork.dir/classes/MyBodyData.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/neuralNetwork.dir/classes/MyBodyData.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/birdi/CLionProjects/neuralNetwork/classes/MyBodyData.cpp > CMakeFiles/neuralNetwork.dir/classes/MyBodyData.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/birdi/Schreibtisch/neuralNetwork07022018/classes/MyBodyData.cpp > CMakeFiles/neuralNetwork.dir/classes/MyBodyData.cpp.i
 
 CMakeFiles/neuralNetwork.dir/classes/MyBodyData.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/neuralNetwork.dir/classes/MyBodyData.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/birdi/CLionProjects/neuralNetwork/classes/MyBodyData.cpp -o CMakeFiles/neuralNetwork.dir/classes/MyBodyData.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/birdi/Schreibtisch/neuralNetwork07022018/classes/MyBodyData.cpp -o CMakeFiles/neuralNetwork.dir/classes/MyBodyData.cpp.s
 
 CMakeFiles/neuralNetwork.dir/classes/MyBodyData.cpp.o.requires:
 
@@ -131,16 +131,16 @@ CMakeFiles/neuralNetwork.dir/classes/MyBodyData.cpp.o.provides.build: CMakeFiles
 
 CMakeFiles/neuralNetwork.dir/classes/MyMatrix.cpp.o: CMakeFiles/neuralNetwork.dir/flags.make
 CMakeFiles/neuralNetwork.dir/classes/MyMatrix.cpp.o: ../classes/MyMatrix.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/birdi/CLionProjects/neuralNetwork/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/neuralNetwork.dir/classes/MyMatrix.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/neuralNetwork.dir/classes/MyMatrix.cpp.o -c /home/birdi/CLionProjects/neuralNetwork/classes/MyMatrix.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/birdi/Schreibtisch/neuralNetwork07022018/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/neuralNetwork.dir/classes/MyMatrix.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/neuralNetwork.dir/classes/MyMatrix.cpp.o -c /home/birdi/Schreibtisch/neuralNetwork07022018/classes/MyMatrix.cpp
 
 CMakeFiles/neuralNetwork.dir/classes/MyMatrix.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/neuralNetwork.dir/classes/MyMatrix.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/birdi/CLionProjects/neuralNetwork/classes/MyMatrix.cpp > CMakeFiles/neuralNetwork.dir/classes/MyMatrix.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/birdi/Schreibtisch/neuralNetwork07022018/classes/MyMatrix.cpp > CMakeFiles/neuralNetwork.dir/classes/MyMatrix.cpp.i
 
 CMakeFiles/neuralNetwork.dir/classes/MyMatrix.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/neuralNetwork.dir/classes/MyMatrix.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/birdi/CLionProjects/neuralNetwork/classes/MyMatrix.cpp -o CMakeFiles/neuralNetwork.dir/classes/MyMatrix.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/birdi/Schreibtisch/neuralNetwork07022018/classes/MyMatrix.cpp -o CMakeFiles/neuralNetwork.dir/classes/MyMatrix.cpp.s
 
 CMakeFiles/neuralNetwork.dir/classes/MyMatrix.cpp.o.requires:
 
@@ -169,7 +169,7 @@ neuralNetwork: CMakeFiles/neuralNetwork.dir/classes/MyBodyData.cpp.o
 neuralNetwork: CMakeFiles/neuralNetwork.dir/classes/MyMatrix.cpp.o
 neuralNetwork: CMakeFiles/neuralNetwork.dir/build.make
 neuralNetwork: CMakeFiles/neuralNetwork.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/birdi/CLionProjects/neuralNetwork/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable neuralNetwork"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/birdi/Schreibtisch/neuralNetwork07022018/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable neuralNetwork"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/neuralNetwork.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -189,6 +189,6 @@ CMakeFiles/neuralNetwork.dir/clean:
 .PHONY : CMakeFiles/neuralNetwork.dir/clean
 
 CMakeFiles/neuralNetwork.dir/depend:
-	cd /home/birdi/CLionProjects/neuralNetwork/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/birdi/CLionProjects/neuralNetwork /home/birdi/CLionProjects/neuralNetwork /home/birdi/CLionProjects/neuralNetwork/cmake-build-debug /home/birdi/CLionProjects/neuralNetwork/cmake-build-debug /home/birdi/CLionProjects/neuralNetwork/cmake-build-debug/CMakeFiles/neuralNetwork.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/birdi/Schreibtisch/neuralNetwork07022018/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/birdi/Schreibtisch/neuralNetwork07022018 /home/birdi/Schreibtisch/neuralNetwork07022018 /home/birdi/Schreibtisch/neuralNetwork07022018/cmake-build-debug /home/birdi/Schreibtisch/neuralNetwork07022018/cmake-build-debug /home/birdi/Schreibtisch/neuralNetwork07022018/cmake-build-debug/CMakeFiles/neuralNetwork.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/neuralNetwork.dir/depend
 

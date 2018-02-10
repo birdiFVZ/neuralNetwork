@@ -6,21 +6,21 @@
 
 #IncludeRegexTransform: 
 
-/home/birdi/CLionProjects/neuralNetwork/classes/MyBodyData.cpp
+/home/birdi/Schreibtisch/neuralNetwork07022018/classes/MyBodyData.cpp
 MyBodyData.h
-/home/birdi/CLionProjects/neuralNetwork/classes/MyBodyData.h
+/home/birdi/Schreibtisch/neuralNetwork07022018/classes/MyBodyData.h
 
-/home/birdi/CLionProjects/neuralNetwork/classes/MyBodyData.h
+/home/birdi/Schreibtisch/neuralNetwork07022018/classes/MyBodyData.h
 iostream
 -
 vector
 -
 
-/home/birdi/CLionProjects/neuralNetwork/classes/MyFile.cpp
+/home/birdi/Schreibtisch/neuralNetwork07022018/classes/MyFile.cpp
 MyFile.h
-/home/birdi/CLionProjects/neuralNetwork/classes/MyFile.h
+/home/birdi/Schreibtisch/neuralNetwork07022018/classes/MyFile.h
 
-/home/birdi/CLionProjects/neuralNetwork/classes/MyFile.h
+/home/birdi/Schreibtisch/neuralNetwork07022018/classes/MyFile.h
 iostream
 -
 fstream
@@ -28,23 +28,25 @@ fstream
 vector
 -
 MyBodyData.h
-/home/birdi/CLionProjects/neuralNetwork/classes/MyBodyData.h
+/home/birdi/Schreibtisch/neuralNetwork07022018/classes/MyBodyData.h
 
-/home/birdi/CLionProjects/neuralNetwork/classes/MyMatrix.cpp
+/home/birdi/Schreibtisch/neuralNetwork07022018/classes/MyMatrix.cpp
 MyMatrix.h
-/home/birdi/CLionProjects/neuralNetwork/classes/MyMatrix.h
+/home/birdi/Schreibtisch/neuralNetwork07022018/classes/MyMatrix.h
 
-/home/birdi/CLionProjects/neuralNetwork/classes/MyMatrix.h
+/home/birdi/Schreibtisch/neuralNetwork07022018/classes/MyMatrix.h
 vector
 -
 iostream
 -
+cmath
+-
 
-/home/birdi/CLionProjects/neuralNetwork/main.cpp
+/home/birdi/Schreibtisch/neuralNetwork07022018/main.cpp
 iostream
 -
 classes/MyFile.h
-/home/birdi/CLionProjects/neuralNetwork/classes/MyFile.h
+/home/birdi/Schreibtisch/neuralNetwork07022018/classes/MyFile.h
 classes/MyMatrix.h
-/home/birdi/CLionProjects/neuralNetwork/classes/MyMatrix.h
+/home/birdi/Schreibtisch/neuralNetwork07022018/classes/MyMatrix.h
 

@@ -4,22 +4,16 @@
 
 int main() {
 
-    string fileName = "cvNoMoving";
-    MyFile file(fileName);
+    //string fileName = "cvNoMoving";
+    //MyFile file(fileName);
 
-
-    MyMatrix matrixA({
-        {1,2},
-        {3,4},
-        {5,6}
-    });
+    MyMatrix matrixA(2,2);
     MyMatrix matrixB({
-        {7,8},
-        {9,10}
+         {0,1,0,0},
+         {0,0,0,1}
     });
 
-    MyMatrix matrixC = matrixA.kroneckerMulti(matrixB);
-
-    matrixC.print("matrixC");
+    matrixB = matrixB.activation();
+    matrixB.print();
     return 0;
 }
