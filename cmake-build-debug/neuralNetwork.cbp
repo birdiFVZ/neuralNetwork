@@ -84,25 +84,37 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/birdi/Schreibtisch/neuralNetwork07022018/classes/MyBodyData.cpp">
-			<Option target="neuralNetwork"/>
-		</Unit>
-		<Unit filename="/home/birdi/Schreibtisch/neuralNetwork07022018/classes/MyBodyData.h">
-			<Option target="neuralNetwork"/>
-		</Unit>
-		<Unit filename="/home/birdi/Schreibtisch/neuralNetwork07022018/classes/MyFile.cpp">
-			<Option target="neuralNetwork"/>
-		</Unit>
-		<Unit filename="/home/birdi/Schreibtisch/neuralNetwork07022018/classes/MyFile.h">
-			<Option target="neuralNetwork"/>
-		</Unit>
-		<Unit filename="/home/birdi/Schreibtisch/neuralNetwork07022018/classes/MyMatrix.cpp">
-			<Option target="neuralNetwork"/>
-		</Unit>
-		<Unit filename="/home/birdi/Schreibtisch/neuralNetwork07022018/classes/MyMatrix.h">
-			<Option target="neuralNetwork"/>
-		</Unit>
 		<Unit filename="/home/birdi/Schreibtisch/neuralNetwork07022018/main.cpp">
+			<Option target="neuralNetwork"/>
+		</Unit>
+		<Unit filename="/home/birdi/Schreibtisch/neuralNetwork07022018/source/MyBodyData.cpp">
+			<Option target="neuralNetwork"/>
+		</Unit>
+		<Unit filename="/home/birdi/Schreibtisch/neuralNetwork07022018/source/MyBodyData.h">
+			<Option target="neuralNetwork"/>
+		</Unit>
+		<Unit filename="/home/birdi/Schreibtisch/neuralNetwork07022018/source/MyFile.cpp">
+			<Option target="neuralNetwork"/>
+		</Unit>
+		<Unit filename="/home/birdi/Schreibtisch/neuralNetwork07022018/source/MyFile.h">
+			<Option target="neuralNetwork"/>
+		</Unit>
+		<Unit filename="/home/birdi/Schreibtisch/neuralNetwork07022018/source/MyMatrix.cpp">
+			<Option target="neuralNetwork"/>
+		</Unit>
+		<Unit filename="/home/birdi/Schreibtisch/neuralNetwork07022018/source/MyMatrix.h">
+			<Option target="neuralNetwork"/>
+		</Unit>
+		<Unit filename="/home/birdi/Schreibtisch/neuralNetwork07022018/source/MyNetwork.cpp">
+			<Option target="neuralNetwork"/>
+		</Unit>
+		<Unit filename="/home/birdi/Schreibtisch/neuralNetwork07022018/source/MyNetwork.h">
+			<Option target="neuralNetwork"/>
+		</Unit>
+		<Unit filename="/home/birdi/Schreibtisch/neuralNetwork07022018/source/funcitons.cpp">
+			<Option target="neuralNetwork"/>
+		</Unit>
+		<Unit filename="/home/birdi/Schreibtisch/neuralNetwork07022018/source/funcitons.h">
 			<Option target="neuralNetwork"/>
 		</Unit>
 		<Unit filename="/home/birdi/Schreibtisch/neuralNetwork07022018/CMakeLists.txt">

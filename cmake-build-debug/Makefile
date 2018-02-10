@@ -123,87 +123,6 @@ neuralNetwork/fast:
 	$(MAKE) -f CMakeFiles/neuralNetwork.dir/build.make CMakeFiles/neuralNetwork.dir/build
 .PHONY : neuralNetwork/fast
 
-classes/MyBodyData.o: classes/MyBodyData.cpp.o
-
-.PHONY : classes/MyBodyData.o
-
-# target to build an object file
-classes/MyBodyData.cpp.o:
-	$(MAKE) -f CMakeFiles/neuralNetwork.dir/build.make CMakeFiles/neuralNetwork.dir/classes/MyBodyData.cpp.o
-.PHONY : classes/MyBodyData.cpp.o
-
-classes/MyBodyData.i: classes/MyBodyData.cpp.i
-
-.PHONY : classes/MyBodyData.i
-
-# target to preprocess a source file
-classes/MyBodyData.cpp.i:
-	$(MAKE) -f CMakeFiles/neuralNetwork.dir/build.make CMakeFiles/neuralNetwork.dir/classes/MyBodyData.cpp.i
-.PHONY : classes/MyBodyData.cpp.i
-
-classes/MyBodyData.s: classes/MyBodyData.cpp.s
-
-.PHONY : classes/MyBodyData.s
-
-# target to generate assembly for a file
-classes/MyBodyData.cpp.s:
-	$(MAKE) -f CMakeFiles/neuralNetwork.dir/build.make CMakeFiles/neuralNetwork.dir/classes/MyBodyData.cpp.s
-.PHONY : classes/MyBodyData.cpp.s
-
-classes/MyFile.o: classes/MyFile.cpp.o
-
-.PHONY : classes/MyFile.o
-
-# target to build an object file
-classes/MyFile.cpp.o:
-	$(MAKE) -f CMakeFiles/neuralNetwork.dir/build.make CMakeFiles/neuralNetwork.dir/classes/MyFile.cpp.o
-.PHONY : classes/MyFile.cpp.o
-
-classes/MyFile.i: classes/MyFile.cpp.i
-
-.PHONY : classes/MyFile.i
-
-# target to preprocess a source file
-classes/MyFile.cpp.i:
-	$(MAKE) -f CMakeFiles/neuralNetwork.dir/build.make CMakeFiles/neuralNetwork.dir/classes/MyFile.cpp.i
-.PHONY : classes/MyFile.cpp.i
-
-classes/MyFile.s: classes/MyFile.cpp.s
-
-.PHONY : classes/MyFile.s
-
-# target to generate assembly for a file
-classes/MyFile.cpp.s:
-	$(MAKE) -f CMakeFiles/neuralNetwork.dir/build.make CMakeFiles/neuralNetwork.dir/classes/MyFile.cpp.s
-.PHONY : classes/MyFile.cpp.s
-
-classes/MyMatrix.o: classes/MyMatrix.cpp.o
-
-.PHONY : classes/MyMatrix.o
-
-# target to build an object file
-classes/MyMatrix.cpp.o:
-	$(MAKE) -f CMakeFiles/neuralNetwork.dir/build.make CMakeFiles/neuralNetwork.dir/classes/MyMatrix.cpp.o
-.PHONY : classes/MyMatrix.cpp.o
-
-classes/MyMatrix.i: classes/MyMatrix.cpp.i
-
-.PHONY : classes/MyMatrix.i
-
-# target to preprocess a source file
-classes/MyMatrix.cpp.i:
-	$(MAKE) -f CMakeFiles/neuralNetwork.dir/build.make CMakeFiles/neuralNetwork.dir/classes/MyMatrix.cpp.i
-.PHONY : classes/MyMatrix.cpp.i
-
-classes/MyMatrix.s: classes/MyMatrix.cpp.s
-
-.PHONY : classes/MyMatrix.s
-
-# target to generate assembly for a file
-classes/MyMatrix.cpp.s:
-	$(MAKE) -f CMakeFiles/neuralNetwork.dir/build.make CMakeFiles/neuralNetwork.dir/classes/MyMatrix.cpp.s
-.PHONY : classes/MyMatrix.cpp.s
-
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -231,6 +150,141 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/neuralNetwork.dir/build.make CMakeFiles/neuralNetwork.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+source/MyBodyData.o: source/MyBodyData.cpp.o
+
+.PHONY : source/MyBodyData.o
+
+# target to build an object file
+source/MyBodyData.cpp.o:
+	$(MAKE) -f CMakeFiles/neuralNetwork.dir/build.make CMakeFiles/neuralNetwork.dir/source/MyBodyData.cpp.o
+.PHONY : source/MyBodyData.cpp.o
+
+source/MyBodyData.i: source/MyBodyData.cpp.i
+
+.PHONY : source/MyBodyData.i
+
+# target to preprocess a source file
+source/MyBodyData.cpp.i:
+	$(MAKE) -f CMakeFiles/neuralNetwork.dir/build.make CMakeFiles/neuralNetwork.dir/source/MyBodyData.cpp.i
+.PHONY : source/MyBodyData.cpp.i
+
+source/MyBodyData.s: source/MyBodyData.cpp.s
+
+.PHONY : source/MyBodyData.s
+
+# target to generate assembly for a file
+source/MyBodyData.cpp.s:
+	$(MAKE) -f CMakeFiles/neuralNetwork.dir/build.make CMakeFiles/neuralNetwork.dir/source/MyBodyData.cpp.s
+.PHONY : source/MyBodyData.cpp.s
+
+source/MyFile.o: source/MyFile.cpp.o
+
+.PHONY : source/MyFile.o
+
+# target to build an object file
+source/MyFile.cpp.o:
+	$(MAKE) -f CMakeFiles/neuralNetwork.dir/build.make CMakeFiles/neuralNetwork.dir/source/MyFile.cpp.o
+.PHONY : source/MyFile.cpp.o
+
+source/MyFile.i: source/MyFile.cpp.i
+
+.PHONY : source/MyFile.i
+
+# target to preprocess a source file
+source/MyFile.cpp.i:
+	$(MAKE) -f CMakeFiles/neuralNetwork.dir/build.make CMakeFiles/neuralNetwork.dir/source/MyFile.cpp.i
+.PHONY : source/MyFile.cpp.i
+
+source/MyFile.s: source/MyFile.cpp.s
+
+.PHONY : source/MyFile.s
+
+# target to generate assembly for a file
+source/MyFile.cpp.s:
+	$(MAKE) -f CMakeFiles/neuralNetwork.dir/build.make CMakeFiles/neuralNetwork.dir/source/MyFile.cpp.s
+.PHONY : source/MyFile.cpp.s
+
+source/MyMatrix.o: source/MyMatrix.cpp.o
+
+.PHONY : source/MyMatrix.o
+
+# target to build an object file
+source/MyMatrix.cpp.o:
+	$(MAKE) -f CMakeFiles/neuralNetwork.dir/build.make CMakeFiles/neuralNetwork.dir/source/MyMatrix.cpp.o
+.PHONY : source/MyMatrix.cpp.o
+
+source/MyMatrix.i: source/MyMatrix.cpp.i
+
+.PHONY : source/MyMatrix.i
+
+# target to preprocess a source file
+source/MyMatrix.cpp.i:
+	$(MAKE) -f CMakeFiles/neuralNetwork.dir/build.make CMakeFiles/neuralNetwork.dir/source/MyMatrix.cpp.i
+.PHONY : source/MyMatrix.cpp.i
+
+source/MyMatrix.s: source/MyMatrix.cpp.s
+
+.PHONY : source/MyMatrix.s
+
+# target to generate assembly for a file
+source/MyMatrix.cpp.s:
+	$(MAKE) -f CMakeFiles/neuralNetwork.dir/build.make CMakeFiles/neuralNetwork.dir/source/MyMatrix.cpp.s
+.PHONY : source/MyMatrix.cpp.s
+
+source/MyNetwork.o: source/MyNetwork.cpp.o
+
+.PHONY : source/MyNetwork.o
+
+# target to build an object file
+source/MyNetwork.cpp.o:
+	$(MAKE) -f CMakeFiles/neuralNetwork.dir/build.make CMakeFiles/neuralNetwork.dir/source/MyNetwork.cpp.o
+.PHONY : source/MyNetwork.cpp.o
+
+source/MyNetwork.i: source/MyNetwork.cpp.i
+
+.PHONY : source/MyNetwork.i
+
+# target to preprocess a source file
+source/MyNetwork.cpp.i:
+	$(MAKE) -f CMakeFiles/neuralNetwork.dir/build.make CMakeFiles/neuralNetwork.dir/source/MyNetwork.cpp.i
+.PHONY : source/MyNetwork.cpp.i
+
+source/MyNetwork.s: source/MyNetwork.cpp.s
+
+.PHONY : source/MyNetwork.s
+
+# target to generate assembly for a file
+source/MyNetwork.cpp.s:
+	$(MAKE) -f CMakeFiles/neuralNetwork.dir/build.make CMakeFiles/neuralNetwork.dir/source/MyNetwork.cpp.s
+.PHONY : source/MyNetwork.cpp.s
+
+source/funcitons.o: source/funcitons.cpp.o
+
+.PHONY : source/funcitons.o
+
+# target to build an object file
+source/funcitons.cpp.o:
+	$(MAKE) -f CMakeFiles/neuralNetwork.dir/build.make CMakeFiles/neuralNetwork.dir/source/funcitons.cpp.o
+.PHONY : source/funcitons.cpp.o
+
+source/funcitons.i: source/funcitons.cpp.i
+
+.PHONY : source/funcitons.i
+
+# target to preprocess a source file
+source/funcitons.cpp.i:
+	$(MAKE) -f CMakeFiles/neuralNetwork.dir/build.make CMakeFiles/neuralNetwork.dir/source/funcitons.cpp.i
+.PHONY : source/funcitons.cpp.i
+
+source/funcitons.s: source/funcitons.cpp.s
+
+.PHONY : source/funcitons.s
+
+# target to generate assembly for a file
+source/funcitons.cpp.s:
+	$(MAKE) -f CMakeFiles/neuralNetwork.dir/build.make CMakeFiles/neuralNetwork.dir/source/funcitons.cpp.s
+.PHONY : source/funcitons.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -240,18 +294,24 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... neuralNetwork"
-	@echo "... classes/MyBodyData.o"
-	@echo "... classes/MyBodyData.i"
-	@echo "... classes/MyBodyData.s"
-	@echo "... classes/MyFile.o"
-	@echo "... classes/MyFile.i"
-	@echo "... classes/MyFile.s"
-	@echo "... classes/MyMatrix.o"
-	@echo "... classes/MyMatrix.i"
-	@echo "... classes/MyMatrix.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... source/MyBodyData.o"
+	@echo "... source/MyBodyData.i"
+	@echo "... source/MyBodyData.s"
+	@echo "... source/MyFile.o"
+	@echo "... source/MyFile.i"
+	@echo "... source/MyFile.s"
+	@echo "... source/MyMatrix.o"
+	@echo "... source/MyMatrix.i"
+	@echo "... source/MyMatrix.s"
+	@echo "... source/MyNetwork.o"
+	@echo "... source/MyNetwork.i"
+	@echo "... source/MyNetwork.s"
+	@echo "... source/funcitons.o"
+	@echo "... source/funcitons.i"
+	@echo "... source/funcitons.s"
 .PHONY : help
 
 
