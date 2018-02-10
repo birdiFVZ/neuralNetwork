@@ -3,6 +3,7 @@
 //
 
 #include "MyMatrix.h"
+#include "functions.h"
 
 MyMatrix::MyMatrix() {
     matrix = {{0}};
@@ -14,7 +15,7 @@ MyMatrix::MyMatrix() {
     }
 }
 
-MyMatrix::MyMatrix(vector<vector<float>> inputMatrix) {
+MyMatrix::MyMatrix(vector<vector<double>> inputMatrix) {
     matrix = inputMatrix;
     if(!MyMatrix::init()) {
         cout << "matrix is invalid" << endl;
@@ -25,7 +26,7 @@ MyMatrix::MyMatrix(vector<vector<float>> inputMatrix) {
 }
 
 MyMatrix::MyMatrix(int x, int y){
-    vector<vector<float>> inputMatrix(x, vector<float>(y));
+    vector<vector<double>> inputMatrix(x, vector<double>(y));
     matrix = inputMatrix;
     if(!MyMatrix::init()) {
         cout << "matrix is invalid" << endl;
@@ -35,9 +36,9 @@ MyMatrix::MyMatrix(int x, int y){
     }
 }
 
-MyMatrix::~MyMatrix() {
-    matrix = {{0}};
-}
+//MyMatrix::~MyMatrix() {
+
+//}
 
 bool MyMatrix::init() {
     xSize = matrix[0].size();
@@ -51,7 +52,7 @@ bool MyMatrix::init() {
 
 }
 
-bool MyMatrix::verify(vector<vector<float>> input) {
+bool MyMatrix::verify(vector<vector<double>> input) {
     int xAxisTag, size = 0;
     for(xAxisTag = 0; xAxisTag < input.size(); xAxisTag++) {
         size += input[xAxisTag].size();
@@ -62,26 +63,31 @@ bool MyMatrix::verify(vector<vector<float>> input) {
     return true;
 }
 
+bool MyMatrix::containValues() {
+    if (valid) {
+        if (matrix.size() > 1 && matrix[0].size() > 1) {
+            return true;
+        }
+    }
+    return false;
+}
+
 void MyMatrix::print(string input) {
     if(valid) {
         cout << input << ": " << endl;
-        for (xAxisTag = 0;
-             xAxisTag < matrix.size();
-             xAxisTag++) {
-            for (yAxisTag = 0;
-                 yAxisTag < matrix[xAxisTag].size();
-                 yAxisTag++) {
-                cout << matrix[xAxisTag][yAxisTag] << " ";
+        for (auto yAxis : matrix) {
+            for (auto xAxis : yAxis) {
+                cout << xAxis << " ";
             }
             cout << endl;
         }
     }
 }
 
-vector<vector<float>> MyMatrix::transpose() {
+vector<vector<double>> MyMatrix::transpose() {
     if(valid){
-        vector<vector<float>> tempMatrix
-                (xSize, vector<float>(ySize));
+        vector<vector<double>> tempMatrix
+                (xSize, vector<double>(ySize));
         for (yAxisTag = 0; yAxisTag < ySize; yAxisTag++) {
             for (xAxisTag = 0; xAxisTag < xSize; xAxisTag++) {
                 tempMatrix[xAxisTag][yAxisTag] = matrix[yAxisTag][xAxisTag];
@@ -93,15 +99,15 @@ vector<vector<float>> MyMatrix::transpose() {
     }
 }
 
-vector<vector<float>> MyMatrix::add(MyMatrix input) {
-    if(valid && verify(input.matrix)){
-        vector<vector<float>> tempMatrix
-                (ySize, vector<float>(xSize));
-        for(xAxisTag = 0; xAxisTag < xSize; xAxisTag++) {
-            for(yAxisTag = 0; yAxisTag < ySize; yAxisTag++) {
+vector<vector<double>> add(MyMatrix first, MyMatrix second) {
+    if(sameSize(first, second)){
+        vector<vector<double>> tempMatrix
+                (first.ySize, vector<double>(first.xSize));
+        for(int xAxisTag = 0; xAxisTag < first.xSize; xAxisTag++) {
+            for(int yAxisTag = 0; yAxisTag < first.ySize; yAxisTag++) {
                 tempMatrix[xAxisTag][yAxisTag] =
-                    matrix[xAxisTag][yAxisTag] +
-                    input.matrix[xAxisTag][yAxisTag];
+                    first.matrix[xAxisTag][yAxisTag] +
+                    second.matrix[xAxisTag][yAxisTag];
             }
         }
         return tempMatrix;
@@ -110,14 +116,14 @@ vector<vector<float>> MyMatrix::add(MyMatrix input) {
     }
 }
 
-vector<vector<float>> MyMatrix::skalarMulti(float skalar) {
-    if(valid) {
-        vector<vector<float>> tempMatrix
-            (ySize, vector<float>(xSize));
-        for(xAxisTag = 0; xAxisTag < xSize; xAxisTag++) {
-            for(yAxisTag = 0; yAxisTag < ySize; yAxisTag++) {
+vector<vector<double>> skalarMulti(MyMatrix first,double skalar) {
+    if(first.valid) {
+        vector<vector<double>> tempMatrix
+            (first.ySize, vector<double>(first.xSize));
+        for(int xAxisTag = 0; xAxisTag < first.xSize; xAxisTag++) {
+            for(int yAxisTag = 0; yAxisTag < first.ySize; yAxisTag++) {
                 tempMatrix[xAxisTag][yAxisTag] =
-                        matrix[xAxisTag][yAxisTag] *
+                        first.matrix[xAxisTag][yAxisTag] *
                         skalar;
             }
         }
@@ -127,15 +133,15 @@ vector<vector<float>> MyMatrix::skalarMulti(float skalar) {
     }
 }
 
-vector<vector<float>> MyMatrix::multi(MyMatrix input) {
-    if (valid && verify(input.matrix)) {
+vector<vector<double>> multi(MyMatrix first, MyMatrix second) {
+    if (first.valid && second.valid) {
         int xMin, yMin,
             xTempTag, yTempTag,
             xMulTag, yMulTag;
-        xMin = min(xSize, input.xSize);
-        yMin = max(ySize, input.ySize);
-        vector<vector<float>> tempMatrix
-            (yMin, vector<float>(xMin));
+        xMin = min(first.xSize, second.xSize);
+        yMin = max(first.ySize, second.ySize);
+        vector<vector<double>> tempMatrix
+            (yMin, vector<double>(xMin));
         for (yTempTag = 0;
              yTempTag < xMin;
              yTempTag++) {
@@ -143,11 +149,11 @@ vector<vector<float>> MyMatrix::multi(MyMatrix input) {
                  xTempTag < yMin;
                  xTempTag++) {
                 for(xMulTag = 0;
-                    xMulTag < xSize;
+                    xMulTag < first.xSize;
                     xMulTag++) {
                     tempMatrix[xTempTag][yTempTag] +=
-                        matrix[xTempTag][xMulTag] *
-                        input.matrix[xMulTag][yTempTag];
+                        first.matrix[xTempTag][xMulTag] *
+                        second.matrix[xMulTag][yTempTag];
                 }
             }
         }
@@ -157,15 +163,15 @@ vector<vector<float>> MyMatrix::multi(MyMatrix input) {
     }
 }
 
-vector<vector<float>> MyMatrix::elementMulit(MyMatrix input) {
-    if(valid && verify(input.matrix)){
-        vector<vector<float>> tempMatrix
-                (ySize, vector<float>(xSize));
-        for(xAxisTag = 0; xAxisTag < xSize; xAxisTag++) {
-            for(yAxisTag = 0; yAxisTag < ySize; yAxisTag++) {
+vector<vector<double>> elementMulit(MyMatrix first, MyMatrix second) {
+    if(sameSize(first, second)){
+        vector<vector<double>> tempMatrix
+                (first.ySize, vector<double>(first.xSize));
+        for(int xAxisTag = 0; xAxisTag < first.xSize; xAxisTag++) {
+            for(int yAxisTag = 0; yAxisTag < first.ySize; yAxisTag++) {
                 tempMatrix[xAxisTag][yAxisTag] =
-                        matrix[xAxisTag][yAxisTag] *
-                        input.matrix[xAxisTag][yAxisTag];
+                        first.matrix[xAxisTag][yAxisTag] *
+                        second.matrix[xAxisTag][yAxisTag];
             }
         }
         return tempMatrix;
@@ -174,28 +180,28 @@ vector<vector<float>> MyMatrix::elementMulit(MyMatrix input) {
     }
 }
 
-vector<vector<float>> MyMatrix::kroneckerMulti(MyMatrix input) {
-    if(valid && verify(input.matrix)){
-        int xTempSize = xSize * input.xSize;
-        int yTempSize = ySize * input.ySize;
-        vector<vector<float>> tempMatrix
-                (yTempSize, vector<float>(xTempSize));
-        int xTempTag = 0, yTempTag = 0, ycount = 0;
-        for(yTempTag = 0, yAxisTag = 0; yTempTag < yTempSize; yTempTag++, yAxisTag++) {
-            if (yAxisTag == ySize) {
+vector<vector<double>> kroneckerMulti(MyMatrix first, MyMatrix second) {
+    if(first.valid && second.valid){
+        int xTempSize = first.xSize * second.xSize;
+        int yTempSize = first.ySize * second.ySize;
+        vector<vector<double>> tempMatrix
+                (yTempSize, vector<double>(xTempSize));
+        int ycount = 0;
+        for(int yTempTag = 0, yAxisTag = 0; yTempTag < yTempSize; yTempTag++, yAxisTag++) {
+            if (yAxisTag == first.ySize) {
                 yAxisTag = 0;
             }
-            for (xTempTag = 0, xAxisTag = 0; xTempTag < xTempSize; xTempTag++, xAxisTag++) {
-                if (xAxisTag == xSize) {
+            for (int xTempTag = 0, xAxisTag = 0; xTempTag < xTempSize; xTempTag++, xAxisTag++) {
+                if (xAxisTag == first.xSize) {
                     xAxisTag = 0;
                 }
                 tempMatrix[yTempTag][xTempTag] =
-                        input.matrix
-                            [yTempTag % input.ySize]
-                            [xTempTag % input.xSize] *
-                        matrix
-                            [(yTempTag - ycount % input.ySize) / input.ySize]
-                            [(xTempTag - xTempTag % input.xSize) / input.xSize];
+                        first.matrix
+                        [(yTempTag - ycount % second.ySize) / second.ySize]
+                        [(xTempTag - xTempTag % second.xSize) / second.xSize] *
+                        second.matrix
+                            [yTempTag % second.ySize]
+                            [xTempTag % second.xSize];
             }
             ycount++;
         }
@@ -205,19 +211,19 @@ vector<vector<float>> MyMatrix::kroneckerMulti(MyMatrix input) {
     }
 }
 
-vector<vector<float>> MyMatrix::horizontalConcat(MyMatrix input) {
-    if (valid && verify(input.matrix) && (ySize == input.ySize)) {
-        int xTempSize = xSize + input.xSize;
-        int yTempSize = ySize;
-        vector<vector<float>> tempMatrix
-                (yTempSize, vector<float>(xTempSize));
-        for(yAxisTag = 0; yAxisTag < yTempSize; yAxisTag++) {
-            for(xAxisTag = 0; xAxisTag < xTempSize; xAxisTag++) {
+vector<vector<double>> horizontalConcat(MyMatrix first, MyMatrix second) {
+    if (first.valid && second.valid && (first.ySize == second.ySize)) {
+        int xTempSize = first.xSize + second.xSize;
+        int yTempSize = first.ySize;
+        vector<vector<double>> tempMatrix
+                (yTempSize, vector<double>(xTempSize));
+        for(int yAxisTag = 0; yAxisTag < yTempSize; yAxisTag++) {
+            for(int xAxisTag = 0; xAxisTag < xTempSize; xAxisTag++) {
                 int value = yAxisTag + xAxisTag;
-                if (xAxisTag < xSize) {
-                    value = matrix[yAxisTag][xAxisTag];
+                if (xAxisTag < first.xSize) {
+                    value = first.matrix[yAxisTag][xAxisTag];
                 } else {
-                    value = input.matrix[yAxisTag][xAxisTag - xSize];
+                    value = second.matrix[yAxisTag][xAxisTag - first.xSize];
                 }
                 tempMatrix[yAxisTag][xAxisTag] = value;
             }
@@ -227,3 +233,101 @@ vector<vector<float>> MyMatrix::horizontalConcat(MyMatrix input) {
         return {{0}};
     }
 }
+
+bool sameSize(MyMatrix first, MyMatrix second) {
+    if (first.valid && second.valid &&
+        first.xSize == second.xSize &&
+        first.ySize == second.ySize) {
+            return true;
+    }
+    return false;
+}
+
+bool MyMatrix::fill(double value) {
+    for (yAxisTag = 0; yAxisTag < ySize; yAxisTag++) {
+        for (xAxisTag = 0; xAxisTag < xSize; xAxisTag++) {
+            matrix[yAxisTag][xAxisTag] = value;
+        }
+    }
+    return true;
+}
+
+bool MyMatrix::fillRandomize(double min, double max) {
+    for (yAxisTag = 0; yAxisTag < ySize; yAxisTag++) {
+        for (xAxisTag = 0; xAxisTag < xSize; xAxisTag++) {
+            matrix[yAxisTag][xAxisTag] = myRandom(min, max);
+        }
+    }
+    return true;
+}
+
+bool MyMatrix::square() {
+    for (yAxisTag = 0; yAxisTag < ySize; yAxisTag++) {
+        for (xAxisTag = 0; xAxisTag < xSize; xAxisTag++) {
+            matrix[yAxisTag][xAxisTag] =
+                    pow(matrix[yAxisTag][xAxisTag], 2);
+        }
+    }
+}
+
+vector<vector<double>> compare(MyMatrix first, MyMatrix second) {
+    if(sameSize(first, second)) {
+        vector<vector<double>> tempMatrix
+                (first.ySize, vector<double>(first.xSize));
+        for (int yAxisTag = 0; yAxisTag < first.ySize; yAxisTag++) {
+            for (int xAxisTag = 0; xAxisTag < first.xSize; xAxisTag++) {
+                tempMatrix[yAxisTag][xAxisTag] =
+                    first.matrix[yAxisTag][xAxisTag] !=
+                    second.matrix[yAxisTag][xAxisTag];
+            }
+        }
+        return tempMatrix;
+    }
+    return {{0}};
+}
+
+/**
+ *
+ * @param first
+ * @param second
+ * @return the amount of matching elements
+ */
+double operator==(MyMatrix first, MyMatrix second) {
+    double count = 0;
+    if (sameSize(first, second)) {
+        for (int yAxisTag = 0; yAxisTag < first.ySize; yAxisTag++) {
+            for (int xAxisTag = 0; xAxisTag < first.xSize; xAxisTag++) {
+                if (first.matrix[yAxisTag][xAxisTag] ==
+                    second.matrix[yAxisTag][xAxisTag]) {
+                    count++;
+                }
+            }
+        }
+        return count;
+    }
+    return 0;
+}
+
+/**
+ *
+ * @param first
+ * @param second
+ * @return the amount of not matching elements
+ */
+double operator!=(MyMatrix first, MyMatrix second) {
+    double count = 0;
+    if (sameSize(first, second)) {
+        for (int yAxisTag = 0; yAxisTag < first.ySize; yAxisTag++) {
+            for (int xAxisTag = 0; xAxisTag < first.xSize; xAxisTag++) {
+                if (first.matrix[yAxisTag][xAxisTag] !=
+                    second.matrix[yAxisTag][xAxisTag]) {
+                    count++;
+                }
+            }
+        }
+        return count;
+    }
+    return 0;
+}
+
+

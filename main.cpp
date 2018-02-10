@@ -1,6 +1,7 @@
 #include <iostream>
 #include "src/MyFile.h"
 #include "src/MyMatrix.h"
+#include "src/MyNetwork.h"
 #include "src/functions.h"
 
 int main() {
@@ -9,11 +10,29 @@ int main() {
     //MyFile file(fileName);
 
 
-    MyMatrix matrixB({
-         {0,1,0,0},
-         {0,0,0,1}
-    });
+    MyMatrix weight(4,4);
+    MyMatrix biasTraining(10,1);
+    MyMatrix biasValidation(10,1);
+    MyMatrix biasTest(10,1);
 
-    matrixB.print();
+    biasTraining.fill(1);
+    biasValidation.fill(1);
+    biasTest.fill(1);
+    weight.fillRandomize(0,0.5);
+
+    MyNetwork network;
+    network.set("weight", weight);
+    network.set("biasTrainig", biasTraining);
+    network.set("biasValidation", biasValidation);
+    network.set("biasTest", biasTest);
+
+    int whileCount = 0;
+    while(whileCount < 500) {
+
+
+
+        whileCount++;
+    }
+
     return 0;
 }

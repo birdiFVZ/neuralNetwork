@@ -13,8 +13,9 @@ using namespace std;
 #ifndef NEURALNETWORK_MYFILE_H
 #define NEURALNETWORK_MYFILE_H
 
-
-
+/**
+ *
+ */
 class MyFile {
 public:
     vector<MyBodyData> data;
@@ -23,7 +24,7 @@ public:
     int count;
 private:
     vector<string> splitString(string, char);
-    float stringToFloat(string);
+    double stringTodouble(string);
     string fileName;
     void initDataArray();
     bool loadFile();

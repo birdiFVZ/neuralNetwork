@@ -7,7 +7,17 @@
 
 #include "MyMatrix.h"
 
-vector<vector<float>> toClass(MyMatrix);
-vector<vector<float>> toMatrix(MyMatrix);
+vector<vector<double>> toClass(MyMatrix);
+vector<vector<double>> toMatrix(MyMatrix);
+
+template<typename T>
+    T myRandom(T min, T max) {
+    T random = static_cast<T>(rand()) /
+            static_cast<T>(RAND_MAX);
+    T difference = max - min;
+    T value = random * difference;
+    return min + value;
+}
+
 
 #endif //NEURALNETWORK_FUNCITONS_H

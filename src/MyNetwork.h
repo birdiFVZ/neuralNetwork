@@ -6,21 +6,43 @@
 #define NEURALNETWORK_MYNETWORK_H
 
 #include "MyMatrix.h"
+#include "functions.h"
 
 class MyNetwork {
 public:
-
+    bool init();
+    bool set(string, MyMatrix);
+    bool get(string);
 private:
-    MyMatrix inputs;
-    MyMatrix outputs;
-    MyMatrix weights;
-    MyMatrix bias;
+    MyMatrix input,
+            output,
+            targetOutput,
+            weight,
+            bias,
+            biasTraining,
+            biasValidation,
+            biasTest,
+            net,
+            targetClass;
 
-    vector<vector<float>> activation(MyMatrix input);
-    vector<vector<float>> derivation();
-    vector<vector<float>> feedForward();
-    float activationFunction(float);
-    float derivationFunction(float);
+    double samples;
+    double inputNeurons;
+    double outputNeurons;
+    double neurons;
+    double errorAmount;
+    double classMatches;
+    double learningRate;
+
+
+    vector<vector<double>> activation(MyMatrix input);
+    vector<vector<double>> derivation();
+    bool feedForward();
+    bool backpropagation(double);
+    bool evaluateError();
+    bool train();
+    double activationFunction(double);
+    double derivationFunction(double);
+    bool check();
 };
 
 

@@ -6,21 +6,33 @@
 
 #IncludeRegexTransform: 
 
-/home/birdi/Schreibtisch/neuralNetwork07022018/classes/MyBodyData.cpp
-MyBodyData.h
-/home/birdi/Schreibtisch/neuralNetwork07022018/classes/MyBodyData.h
+/home/birdi/Schreibtisch/neuralNetwork07022018/main.cpp
+iostream
+-
+src/MyFile.h
+/home/birdi/Schreibtisch/neuralNetwork07022018/src/MyFile.h
+src/MyMatrix.h
+/home/birdi/Schreibtisch/neuralNetwork07022018/src/MyMatrix.h
+src/MyNetwork.h
+/home/birdi/Schreibtisch/neuralNetwork07022018/src/MyNetwork.h
+src/functions.h
+/home/birdi/Schreibtisch/neuralNetwork07022018/src/functions.h
 
-/home/birdi/Schreibtisch/neuralNetwork07022018/classes/MyBodyData.h
+/home/birdi/Schreibtisch/neuralNetwork07022018/src/MyBodyData.cpp
+MyBodyData.h
+/home/birdi/Schreibtisch/neuralNetwork07022018/src/MyBodyData.h
+
+/home/birdi/Schreibtisch/neuralNetwork07022018/src/MyBodyData.h
 iostream
 -
 vector
 -
 
-/home/birdi/Schreibtisch/neuralNetwork07022018/classes/MyFile.cpp
+/home/birdi/Schreibtisch/neuralNetwork07022018/src/MyFile.cpp
 MyFile.h
-/home/birdi/Schreibtisch/neuralNetwork07022018/classes/MyFile.h
+/home/birdi/Schreibtisch/neuralNetwork07022018/src/MyFile.h
 
-/home/birdi/Schreibtisch/neuralNetwork07022018/classes/MyFile.h
+/home/birdi/Schreibtisch/neuralNetwork07022018/src/MyFile.h
 iostream
 -
 fstream
@@ -28,13 +40,15 @@ fstream
 vector
 -
 MyBodyData.h
-/home/birdi/Schreibtisch/neuralNetwork07022018/classes/MyBodyData.h
+/home/birdi/Schreibtisch/neuralNetwork07022018/src/MyBodyData.h
 
-/home/birdi/Schreibtisch/neuralNetwork07022018/classes/MyMatrix.cpp
+/home/birdi/Schreibtisch/neuralNetwork07022018/src/MyMatrix.cpp
 MyMatrix.h
-/home/birdi/Schreibtisch/neuralNetwork07022018/classes/MyMatrix.h
+/home/birdi/Schreibtisch/neuralNetwork07022018/src/MyMatrix.h
+functions.h
+/home/birdi/Schreibtisch/neuralNetwork07022018/src/functions.h
 
-/home/birdi/Schreibtisch/neuralNetwork07022018/classes/MyMatrix.h
+/home/birdi/Schreibtisch/neuralNetwork07022018/src/MyMatrix.h
 vector
 -
 iostream
@@ -42,11 +56,21 @@ iostream
 cmath
 -
 
-/home/birdi/Schreibtisch/neuralNetwork07022018/main.cpp
-iostream
--
-classes/MyFile.h
-/home/birdi/Schreibtisch/neuralNetwork07022018/classes/MyFile.h
-classes/MyMatrix.h
-/home/birdi/Schreibtisch/neuralNetwork07022018/classes/MyMatrix.h
+/home/birdi/Schreibtisch/neuralNetwork07022018/src/MyNetwork.cpp
+MyNetwork.h
+/home/birdi/Schreibtisch/neuralNetwork07022018/src/MyNetwork.h
+
+/home/birdi/Schreibtisch/neuralNetwork07022018/src/MyNetwork.h
+MyMatrix.h
+/home/birdi/Schreibtisch/neuralNetwork07022018/src/MyMatrix.h
+functions.h
+/home/birdi/Schreibtisch/neuralNetwork07022018/src/functions.h
+
+/home/birdi/Schreibtisch/neuralNetwork07022018/src/functions.cpp
+functions.h
+/home/birdi/Schreibtisch/neuralNetwork07022018/src/functions.h
+
+/home/birdi/Schreibtisch/neuralNetwork07022018/src/functions.h
+MyMatrix.h
+/home/birdi/Schreibtisch/neuralNetwork07022018/src/MyMatrix.h
 

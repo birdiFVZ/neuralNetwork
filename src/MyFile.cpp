@@ -41,8 +41,8 @@ int MyFile::readData() {
         string pointName =
                 lineData[whileTag][0];
         if (pointName != "property") {
-            float pointValue =
-                    stringToFloat(lineData[whileTag][1]);
+            double pointValue =
+                    stringTodouble(lineData[whileTag][1]);
             if (lineData[whileTag][0] == "forearmLeft" &&
                 tempData.forearmLeft.value != -1) {
                 MyFile::data.push_back(tempData);
@@ -121,7 +121,7 @@ vector<string> MyFile::splitString(
     return returnVector;
 }
 
-float MyFile::stringToFloat(std::string inputString) {
+double MyFile::stringTodouble(std::string inputString) {
     int positionTag;
     for (positionTag = 0;
          inputString[positionTag];

@@ -12,7 +12,7 @@ using namespace std;
 
 struct dataPoint{
     string name;
-    float value;
+    double value;
 };
 
 class MyBodyData {

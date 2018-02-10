@@ -5,12 +5,12 @@
 #include "functions.h"
 
 
-vector<vector<float>> toClass(MyMatrix input) {
+vector<vector<double>> toClass(MyMatrix input) {
     int count = 0;
     if(input.valid) {
         int yAxisTag, xAxisTag, value;
-        vector<vector<float>> tempMatrix
-                (input.ySize, vector<float>(1));
+        vector<vector<double>> tempMatrix
+                (input.ySize, vector<double>(1));
         for(yAxisTag = 0; yAxisTag < input.ySize; yAxisTag++) {
             value = 0;
             for(xAxisTag = 0; xAxisTag < input.xSize; xAxisTag++) {
@@ -33,15 +33,16 @@ vector<vector<float>> toClass(MyMatrix input) {
     }
 }
 
-vector<vector<float>> toMatrix(MyMatrix input) {
+vector<vector<double>> toMatrix(MyMatrix input) {
     int xAxisTag, yAxisTag, max = 0;
     for (yAxisTag = 0; yAxisTag < input.ySize; yAxisTag++) {
         if (max < input.matrix[yAxisTag][0]) {
             max = input.matrix[yAxisTag][0];
         }
+
     }
-    vector<vector<float>> tempMatrix
-            (input.ySize, vector<float>(max));
+    vector<vector<double>> tempMatrix
+            (input.ySize, vector<double>(max));
     for (yAxisTag = 0; yAxisTag < input.ySize; yAxisTag++) {
         for(xAxisTag = 0; xAxisTag < max; xAxisTag++) {
             if ((input.matrix[yAxisTag][0] - 1) == xAxisTag) {
@@ -51,3 +52,4 @@ vector<vector<float>> toMatrix(MyMatrix input) {
     }
     return tempMatrix;
 }
+

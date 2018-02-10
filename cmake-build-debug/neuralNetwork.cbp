@@ -87,34 +87,34 @@
 		<Unit filename="/home/birdi/Schreibtisch/neuralNetwork07022018/main.cpp">
 			<Option target="neuralNetwork"/>
 		</Unit>
-		<Unit filename="/home/birdi/Schreibtisch/neuralNetwork07022018/source/MyBodyData.cpp">
+		<Unit filename="/home/birdi/Schreibtisch/neuralNetwork07022018/src/MyBodyData.cpp">
 			<Option target="neuralNetwork"/>
 		</Unit>
-		<Unit filename="/home/birdi/Schreibtisch/neuralNetwork07022018/source/MyBodyData.h">
+		<Unit filename="/home/birdi/Schreibtisch/neuralNetwork07022018/src/MyBodyData.h">
 			<Option target="neuralNetwork"/>
 		</Unit>
-		<Unit filename="/home/birdi/Schreibtisch/neuralNetwork07022018/source/MyFile.cpp">
+		<Unit filename="/home/birdi/Schreibtisch/neuralNetwork07022018/src/MyFile.cpp">
 			<Option target="neuralNetwork"/>
 		</Unit>
-		<Unit filename="/home/birdi/Schreibtisch/neuralNetwork07022018/source/MyFile.h">
+		<Unit filename="/home/birdi/Schreibtisch/neuralNetwork07022018/src/MyFile.h">
 			<Option target="neuralNetwork"/>
 		</Unit>
-		<Unit filename="/home/birdi/Schreibtisch/neuralNetwork07022018/source/MyMatrix.cpp">
+		<Unit filename="/home/birdi/Schreibtisch/neuralNetwork07022018/src/MyMatrix.cpp">
 			<Option target="neuralNetwork"/>
 		</Unit>
-		<Unit filename="/home/birdi/Schreibtisch/neuralNetwork07022018/source/MyMatrix.h">
+		<Unit filename="/home/birdi/Schreibtisch/neuralNetwork07022018/src/MyMatrix.h">
 			<Option target="neuralNetwork"/>
 		</Unit>
-		<Unit filename="/home/birdi/Schreibtisch/neuralNetwork07022018/source/MyNetwork.cpp">
+		<Unit filename="/home/birdi/Schreibtisch/neuralNetwork07022018/src/MyNetwork.cpp">
 			<Option target="neuralNetwork"/>
 		</Unit>
-		<Unit filename="/home/birdi/Schreibtisch/neuralNetwork07022018/source/MyNetwork.h">
+		<Unit filename="/home/birdi/Schreibtisch/neuralNetwork07022018/src/MyNetwork.h">
 			<Option target="neuralNetwork"/>
 		</Unit>
-		<Unit filename="/home/birdi/Schreibtisch/neuralNetwork07022018/source/funcitons.cpp">
+		<Unit filename="/home/birdi/Schreibtisch/neuralNetwork07022018/src/functions.cpp">
 			<Option target="neuralNetwork"/>
 		</Unit>
-		<Unit filename="/home/birdi/Schreibtisch/neuralNetwork07022018/source/funcitons.h">
+		<Unit filename="/home/birdi/Schreibtisch/neuralNetwork07022018/src/functions.h">
 			<Option target="neuralNetwork"/>
 		</Unit>
 		<Unit filename="/home/birdi/Schreibtisch/neuralNetwork07022018/CMakeLists.txt">
