@@ -4,12 +4,13 @@
 #include "src/MyNetwork.h"
 #include "src/functions.h"
 
+#include <plplot/plplot.h>
+
 int main() {
 
     //string fileName = "cvNoMoving";
     //MyFile file(fileName);
-
-
+    
     MyMatrix weight(4,4);
     MyMatrix biasTraining(10,1);
     MyMatrix biasValidation(10,1);

@@ -17,6 +17,8 @@ src/MyNetwork.h
 /home/birdi/Schreibtisch/neuralNetwork07022018/src/MyNetwork.h
 src/functions.h
 /home/birdi/Schreibtisch/neuralNetwork07022018/src/functions.h
+plplot/plcdemos.h
+/home/birdi/Schreibtisch/neuralNetwork07022018/plplot/plcdemos.h
 
 /home/birdi/Schreibtisch/neuralNetwork07022018/src/MyBodyData.cpp
 MyBodyData.h
