@@ -4,7 +4,14 @@
 
 #include "MyBodyData.h"
 
-MyBodyData::MyBodyData() {
+MyBodyData::MyBodyData(MyFile inputFile) {
+    init();
+    for (auto row : inputFile.rowMap) {
+        cout << row["value"] << endl;
+    }
+}
+
+bool MyBodyData::init() {
     forearmLeft.name = "forearmLeft";
     forearmLeft.value = -1;
     upperarmLeft.name = "upperarmLeft";

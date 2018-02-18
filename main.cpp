@@ -1,16 +1,21 @@
 #include <iostream>
-#include "src/MyFile.h"
+
 #include "src/MyMatrix.h"
 #include "src/MyNetwork.h"
 #include "src/functions.h"
+#include "src/MyFile.h"
+#include "src/MyBodyData.h"
 
-#include <plplot/plplot.h>
+using namespace std;
 
 int main() {
 
-    //string fileName = "cvNoMoving";
-    //MyFile file(fileName);
-    
+    string trainingPath = "/home/birdi/Schreibtisch/neuralNetwork07022018/data/training.csv";
+    MyFile trainingFile(trainingPath);
+    //MyBodyData trainingData(training);
+
+
+    /*
     MyMatrix weight(4,4);
     MyMatrix biasTraining(10,1);
     MyMatrix biasValidation(10,1);
@@ -34,6 +39,6 @@ int main() {
 
         whileCount++;
     }
-
+*/
     return 0;
 }

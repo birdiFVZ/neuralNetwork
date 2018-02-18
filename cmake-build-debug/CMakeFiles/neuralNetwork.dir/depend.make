@@ -10,8 +10,8 @@ CMakeFiles/neuralNetwork.dir/main.cpp.o: ../src/functions.h
 
 CMakeFiles/neuralNetwork.dir/src/MyBodyData.cpp.o: ../src/MyBodyData.cpp
 CMakeFiles/neuralNetwork.dir/src/MyBodyData.cpp.o: ../src/MyBodyData.h
+CMakeFiles/neuralNetwork.dir/src/MyBodyData.cpp.o: ../src/MyFile.h
 
-CMakeFiles/neuralNetwork.dir/src/MyFile.cpp.o: ../src/MyBodyData.h
 CMakeFiles/neuralNetwork.dir/src/MyFile.cpp.o: ../src/MyFile.cpp
 CMakeFiles/neuralNetwork.dir/src/MyFile.cpp.o: ../src/MyFile.h
 
@@ -27,4 +27,9 @@ CMakeFiles/neuralNetwork.dir/src/MyNetwork.cpp.o: ../src/functions.h
 CMakeFiles/neuralNetwork.dir/src/functions.cpp.o: ../src/MyMatrix.h
 CMakeFiles/neuralNetwork.dir/src/functions.cpp.o: ../src/functions.cpp
 CMakeFiles/neuralNetwork.dir/src/functions.cpp.o: ../src/functions.h
+
+CMakeFiles/neuralNetwork.dir/trash/oldfile.cpp.o: ../src/MyBodyData.h
+CMakeFiles/neuralNetwork.dir/trash/oldfile.cpp.o: ../src/MyFile.h
+CMakeFiles/neuralNetwork.dir/trash/oldfile.cpp.o: ../trash/oldfile.cpp
+CMakeFiles/neuralNetwork.dir/trash/oldfile.cpp.o: ../trash/oldfile.h
 

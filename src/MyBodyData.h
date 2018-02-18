@@ -4,6 +4,9 @@
 
 #include <iostream>
 #include <vector>
+#include <map>
+#include <list>
+#include "MyFile.h"
 
 #ifndef NEURALNETWORK_BODYDATA_H
 #define NEURALNETWORK_BODYDATA_H
@@ -17,7 +20,9 @@ struct dataPoint{
 
 class MyBodyData {
 public:
-    MyBodyData();
+    MyBodyData(MyFile);
+    bool init();
+
     dataPoint forearmLeft;
     dataPoint upperarmLeft;
     dataPoint shoulderHalfLeft;
@@ -34,6 +39,7 @@ public:
     dataPoint upperLegLeft;
     dataPoint upperLegRight;
     dataPoint lowerLegRight;
+    list<map<string, float>> data;
 };
 
 

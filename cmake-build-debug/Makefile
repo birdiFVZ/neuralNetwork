@@ -285,6 +285,33 @@ src/functions.cpp.s:
 	$(MAKE) -f CMakeFiles/neuralNetwork.dir/build.make CMakeFiles/neuralNetwork.dir/src/functions.cpp.s
 .PHONY : src/functions.cpp.s
 
+trash/oldfile.o: trash/oldfile.cpp.o
+
+.PHONY : trash/oldfile.o
+
+# target to build an object file
+trash/oldfile.cpp.o:
+	$(MAKE) -f CMakeFiles/neuralNetwork.dir/build.make CMakeFiles/neuralNetwork.dir/trash/oldfile.cpp.o
+.PHONY : trash/oldfile.cpp.o
+
+trash/oldfile.i: trash/oldfile.cpp.i
+
+.PHONY : trash/oldfile.i
+
+# target to preprocess a source file
+trash/oldfile.cpp.i:
+	$(MAKE) -f CMakeFiles/neuralNetwork.dir/build.make CMakeFiles/neuralNetwork.dir/trash/oldfile.cpp.i
+.PHONY : trash/oldfile.cpp.i
+
+trash/oldfile.s: trash/oldfile.cpp.s
+
+.PHONY : trash/oldfile.s
+
+# target to generate assembly for a file
+trash/oldfile.cpp.s:
+	$(MAKE) -f CMakeFiles/neuralNetwork.dir/build.make CMakeFiles/neuralNetwork.dir/trash/oldfile.cpp.s
+.PHONY : trash/oldfile.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -312,6 +339,9 @@ help:
 	@echo "... src/functions.o"
 	@echo "... src/functions.i"
 	@echo "... src/functions.s"
+	@echo "... trash/oldfile.o"
+	@echo "... trash/oldfile.i"
+	@echo "... trash/oldfile.s"
 .PHONY : help
 
 

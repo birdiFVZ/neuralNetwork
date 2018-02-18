@@ -117,6 +117,12 @@
 		<Unit filename="/home/birdi/Schreibtisch/neuralNetwork07022018/src/functions.h">
 			<Option target="neuralNetwork"/>
 		</Unit>
+		<Unit filename="/home/birdi/Schreibtisch/neuralNetwork07022018/trash/oldfile.cpp">
+			<Option target="neuralNetwork"/>
+		</Unit>
+		<Unit filename="/home/birdi/Schreibtisch/neuralNetwork07022018/trash/oldfile.h">
+			<Option target="neuralNetwork"/>
+		</Unit>
 		<Unit filename="/home/birdi/Schreibtisch/neuralNetwork07022018/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

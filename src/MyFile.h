@@ -1,38 +1,33 @@
 //
-// Created by birdi on 04.12.17.
+// Created by birdi on 18.02.18.
 //
-
-#include <iostream>
-#include <fstream>
-#include <vector>
-#include "MyBodyData.h"
-
-
-using namespace std;
 
 #ifndef NEURALNETWORK_MYFILE_H
 #define NEURALNETWORK_MYFILE_H
 
-/**
- *
- */
+#include <string>
+#include <iostream>
+#include <fstream>
+#include <list>
+#include <map>
+
+using namespace std;
+
 class MyFile {
 public:
-    vector<MyBodyData> data;
-    MyFile(string input);
-    string path;
-    int count;
+    MyFile(string);
+    bool status;
+    list<string> rowList;
+    list<map<string, string>> rowMap;
 private:
-    vector<string> splitString(string, char);
-    double stringTodouble(string);
-    string fileName;
-    void initDataArray();
-    bool loadFile();
-    int readData();
-    void closeFile();
-    string directory =
-        "/home/birdi/CLionProjects/neuralNetwork/data";
+    char delimiter = ';';
+    string key[3] = {"name", "value", "class"};
+    string filePath;
     ifstream file;
+
+
+    map<string, string> splitString(string);
+    bool readFile();
 };
 
 

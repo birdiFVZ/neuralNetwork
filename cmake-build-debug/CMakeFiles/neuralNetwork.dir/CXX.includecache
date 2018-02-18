@@ -9,16 +9,16 @@
 /home/birdi/Schreibtisch/neuralNetwork07022018/main.cpp
 iostream
 -
-src/MyFile.h
-/home/birdi/Schreibtisch/neuralNetwork07022018/src/MyFile.h
 src/MyMatrix.h
 /home/birdi/Schreibtisch/neuralNetwork07022018/src/MyMatrix.h
 src/MyNetwork.h
 /home/birdi/Schreibtisch/neuralNetwork07022018/src/MyNetwork.h
 src/functions.h
 /home/birdi/Schreibtisch/neuralNetwork07022018/src/functions.h
-plplot/plcdemos.h
-/home/birdi/Schreibtisch/neuralNetwork07022018/plplot/plcdemos.h
+src/MyFile.h
+/home/birdi/Schreibtisch/neuralNetwork07022018/src/MyFile.h
+src/MyBodyData.h
+/home/birdi/Schreibtisch/neuralNetwork07022018/src/MyBodyData.h
 
 /home/birdi/Schreibtisch/neuralNetwork07022018/src/MyBodyData.cpp
 MyBodyData.h
@@ -29,20 +29,28 @@ iostream
 -
 vector
 -
+map
+-
+list
+-
+MyFile.h
+/home/birdi/Schreibtisch/neuralNetwork07022018/src/MyFile.h
 
 /home/birdi/Schreibtisch/neuralNetwork07022018/src/MyFile.cpp
 MyFile.h
 /home/birdi/Schreibtisch/neuralNetwork07022018/src/MyFile.h
 
 /home/birdi/Schreibtisch/neuralNetwork07022018/src/MyFile.h
+string
+-
 iostream
 -
 fstream
 -
-vector
+list
 -
-MyBodyData.h
-/home/birdi/Schreibtisch/neuralNetwork07022018/src/MyBodyData.h
+map
+-
 
 /home/birdi/Schreibtisch/neuralNetwork07022018/src/MyMatrix.cpp
 MyMatrix.h
@@ -75,4 +83,20 @@ functions.h
 /home/birdi/Schreibtisch/neuralNetwork07022018/src/functions.h
 MyMatrix.h
 /home/birdi/Schreibtisch/neuralNetwork07022018/src/MyMatrix.h
+
+/home/birdi/Schreibtisch/neuralNetwork07022018/trash/oldfile.cpp
+oldfile.h
+/home/birdi/Schreibtisch/neuralNetwork07022018/trash/oldfile.h
+
+/home/birdi/Schreibtisch/neuralNetwork07022018/trash/oldfile.h
+iostream
+-
+fstream
+-
+vector
+-
+string
+-
+../src/MyBodyData.h
+/home/birdi/Schreibtisch/neuralNetwork07022018/src/MyBodyData.h
 

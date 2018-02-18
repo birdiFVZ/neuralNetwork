@@ -11,8 +11,8 @@ CMakeFiles/neuralNetwork.dir/main.cpp.o
 CMakeFiles/neuralNetwork.dir/src/MyBodyData.cpp.o
  /home/birdi/Schreibtisch/neuralNetwork07022018/src/MyBodyData.cpp
  /home/birdi/Schreibtisch/neuralNetwork07022018/src/MyBodyData.h
+ /home/birdi/Schreibtisch/neuralNetwork07022018/src/MyFile.h
 CMakeFiles/neuralNetwork.dir/src/MyFile.cpp.o
- /home/birdi/Schreibtisch/neuralNetwork07022018/src/MyBodyData.h
  /home/birdi/Schreibtisch/neuralNetwork07022018/src/MyFile.cpp
  /home/birdi/Schreibtisch/neuralNetwork07022018/src/MyFile.h
 CMakeFiles/neuralNetwork.dir/src/MyMatrix.cpp.o
@@ -28,3 +28,8 @@ CMakeFiles/neuralNetwork.dir/src/functions.cpp.o
  /home/birdi/Schreibtisch/neuralNetwork07022018/src/MyMatrix.h
  /home/birdi/Schreibtisch/neuralNetwork07022018/src/functions.cpp
  /home/birdi/Schreibtisch/neuralNetwork07022018/src/functions.h
+CMakeFiles/neuralNetwork.dir/trash/oldfile.cpp.o
+ /home/birdi/Schreibtisch/neuralNetwork07022018/src/MyBodyData.h
+ /home/birdi/Schreibtisch/neuralNetwork07022018/src/MyFile.h
+ /home/birdi/Schreibtisch/neuralNetwork07022018/trash/oldfile.cpp
+ /home/birdi/Schreibtisch/neuralNetwork07022018/trash/oldfile.h

@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/birdi/Schreibtisch/neuralNetwork07022018/src/MyMatrix.cpp" "/home/birdi/Schreibtisch/neuralNetwork07022018/cmake-build-debug/CMakeFiles/neuralNetwork.dir/src/MyMatrix.cpp.o"
   "/home/birdi/Schreibtisch/neuralNetwork07022018/src/MyNetwork.cpp" "/home/birdi/Schreibtisch/neuralNetwork07022018/cmake-build-debug/CMakeFiles/neuralNetwork.dir/src/MyNetwork.cpp.o"
   "/home/birdi/Schreibtisch/neuralNetwork07022018/src/functions.cpp" "/home/birdi/Schreibtisch/neuralNetwork07022018/cmake-build-debug/CMakeFiles/neuralNetwork.dir/src/functions.cpp.o"
+  "/home/birdi/Schreibtisch/neuralNetwork07022018/trash/oldfile.cpp" "/home/birdi/Schreibtisch/neuralNetwork07022018/cmake-build-debug/CMakeFiles/neuralNetwork.dir/trash/oldfile.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

@@ -1,134 +1,52 @@
 //
-// Created by birdi on 04.12.17.
+// Created by birdi on 18.02.18.
 //
 
 #include "MyFile.h"
 
-using namespace std;
 
-MyFile::MyFile(string input) {
+MyFile::MyFile (string filePath) {
+    this->filePath = filePath;
+    status = readFile();
 
-    MyFile::fileName = input;
-    if (MyFile::loadFile()) {
-      MyFile::readData();
-    };
-    MyFile::closeFile();
+
+    cout << ((filePath != "") ? "read" : "notread") << endl;
 }
 
-
-
-bool MyFile::loadFile() {
-    MyFile::path = MyFile::directory + "/" +
-                        MyFile::fileName + ".csv";
-    MyFile::file.open(MyFile::path);
-    if (MyFile::file.is_open()) {
-        return true;
-    } else {
-        cout << "not possible to open: " << MyFile::path << endl;
+bool MyFile::readFile() {
+    file.open(filePath);
+    try {
+        if (file.is_open()) {
+            string line;
+            int lineTag = 0;
+            while (getline(file,line) && lineTag < 16) {
+                rowList.push_back(line);
+                rowMap.push_back(splitString(line));
+                lineTag++;
+            }
+            return true;
+        }
+        return false;
+    } catch (const exception e) {
         return false;
     }
 }
 
-int MyFile::readData() {
-    string line;
-    char delimiter = ';';
-    int whileTag = 0;
-    vector<vector<string>> lineData;
-    MyBodyData tempData;
-
-    while(getline(MyFile::file, line)) {
-        lineData.push_back(MyFile::splitString(line, delimiter));
-        string pointName =
-                lineData[whileTag][0];
-        if (pointName != "property") {
-            double pointValue =
-                    stringTodouble(lineData[whileTag][1]);
-            if (lineData[whileTag][0] == "forearmLeft" &&
-                tempData.forearmLeft.value != -1) {
-                MyFile::data.push_back(tempData);
-                MyBodyData tempData;
-                tempData.forearmLeft.value = pointValue;
-            } else {
-                if (pointName == "forearmLeft") {
-                    tempData.forearmLeft.value = pointValue;
-                } else if (pointName == "upperarmLeft") {
-                    tempData.upperarmLeft.value = pointValue;
-                } else if (pointName == "shoulderHalfLeft") {
-                    tempData.shoulderHalfLeft.value = pointValue;
-                } else if (pointName == "neck") {
-                    tempData.neck.value = pointValue;
-                } else if (pointName == "shoulderHalfRight") {
-                    tempData.shoulderHalfRight.value = pointValue;
-                } else if (pointName == "upperarmRight") {
-                    tempData.upperarmRight.value = pointValue;
-                } else if (pointName == "forearmRight") {
-                    tempData.forearmRight.value = pointValue;
-                } else if (pointName == "shoulder") {
-                    tempData.shoulder.value = pointValue;
-                } else if (pointName == "upperBody") {
-                    tempData.upperBody.value = pointValue;
-                } else if (pointName == "hip") {
-                    tempData.hip.value = pointValue;
-                } else if (pointName == "lowerBody") {
-                    tempData.lowerBody.value = pointValue;
-                } else if (pointName == "body") {
-                    tempData.body.value = pointValue;
-                } else if (pointName == "lowerLegLeft") {
-                    tempData.lowerLegLeft.value = pointValue;
-                } else if (pointName == "upperLegLeft") {
-                    tempData.upperLegLeft.value = pointValue;
-                } else if (pointName == "upperLegRight") {
-                    tempData.upperLegRight.value = pointValue;
-                } else if (pointName == "lowerLegRight") {
-                    tempData.lowerLegRight.value = pointValue;
-                } else {
-                    cout << "wrong input" << endl;
-                    return -1;
-                }
-            }
-        }
-        whileTag++;
-    }
-    MyFile::count = whileTag;
-}
-
-
-
-void MyFile::closeFile() {
-    if (MyFile::file.is_open()) {
-        MyFile::file.close();
-    }
-}
-
-vector<string> MyFile::splitString(
-        std::string inputString,
-        char delimiter
-) {
-    vector<string> returnVector;
+map<string, string> MyFile::splitString(string input) {
+    map<string, string> returnMap;
     string tempString = "";
-    for (
-            int tag = 0;
-            tag < inputString.length();
-            tag ++
-            ) {
-        if (inputString[tag] == delimiter) {
-            returnVector.push_back(tempString);
-            tempString = "";
+    int keyTag = 0;
+    for (auto sign : input) {
+        if (sign != delimiter) {
+            tempString += sign;
         } else {
-            tempString += inputString[tag];
+            returnMap[key[keyTag]] = tempString;
+            keyTag++;
+            if (keyTag == 3) {
+                keyTag = 0;
+            }
+            tempString = "";
         }
     }
-    return returnVector;
-}
-
-double MyFile::stringTodouble(std::string inputString) {
-    int positionTag;
-    for (positionTag = 0;
-         inputString[positionTag];
-         positionTag++) {
-        if (inputString[positionTag] == ',') {
-            inputString.replace(positionTag,1,".");
-        }
-    }
-    return std::stof(inputString);
-}
+    return returnMap;
+};
